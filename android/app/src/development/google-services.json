@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "194111254579",
+    "project_id": "imdumb-245b1",
+    "storage_bucket": "imdumb-245b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194111254579:android:76201d86ecf8ebec953346",
+        "android_client_info": {
+          "package_name": "com.example.imdumb.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuWNBLxY_ZQZMetuet_1Zho2MXk3HdP2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
