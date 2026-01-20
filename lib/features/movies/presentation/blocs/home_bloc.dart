@@ -30,6 +30,7 @@ class HomeError extends HomeState {
   HomeError(this.message);
 }
 
+// SOLID: SRP, DIP — Solo gestiona estado de Home, recibe repository por constructor
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final MovieRepository repository;
 

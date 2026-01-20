@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 
+// SOLID: OCP — Jerarquía permite agregar nuevas excepciones sin modificar clase base
 abstract class AppException implements Exception {
   final String message;
   final String userFriendlyMessage;

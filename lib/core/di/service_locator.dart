@@ -14,6 +14,7 @@ import '../remote_config/firebase_remote_config_service.dart';
 
 final serviceLocator = GetIt.instance;
 
+// SOLID: DIP — Inyección de dependencias centralizada, registra abstracciones
 Future<void> initializeDependencies() async {
   // External dependencies
   final sharedPreferences = await SharedPreferences.getInstance();
@@ -41,6 +42,7 @@ Future<void> initializeDependencies() async {
     () => FirebaseRemoteConfigService(),
   );
 
+  // SOLID: DIP — Registro de interfaz → implementación permite cambiar providers sin modificar consumidores
   serviceLocator.registerLazySingleton<AnalyticsService>(
     () => FirebaseAnalyticsService(),
   );

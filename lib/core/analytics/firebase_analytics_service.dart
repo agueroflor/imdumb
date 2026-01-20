@@ -1,9 +1,11 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'analytics_service.dart';
 
+// SOLID: LSP, DIP — Implementa AnalyticsService, puede sustituir la abstracción sin romper contratos
 class FirebaseAnalyticsService implements AnalyticsService {
   final FirebaseAnalytics _analytics;
 
+  // SOLID: DIP — Recibe dependencia por constructor, permite inyectar mocks en tests
   FirebaseAnalyticsService({FirebaseAnalytics? analytics})
       : _analytics = analytics ?? FirebaseAnalytics.instance;
 

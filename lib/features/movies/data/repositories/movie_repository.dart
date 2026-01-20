@@ -5,6 +5,7 @@ import '../models/actor_model.dart';
 import '../models/movie_detail_model.dart';
 import '../models/movie_model.dart';
 
+// SOLID: SRP, DIP — Solo gestiona datos de TMDB, recibe Dio inyectado
 class MovieRepository {
   final Dio dio;
   final String apiKey;
@@ -12,6 +13,7 @@ class MovieRepository {
   final Connectivity _connectivity;
   static const int _maxRetries = 2;
 
+  // SOLID: DIP — Recibe dependencias configuradas, permite mocks en tests
   MovieRepository({
     required this.dio,
     required this.apiKey,

@@ -1,6 +1,7 @@
 import '../remote_config/firebase_remote_config_service.dart';
 import '../local/hive_service.dart';
 
+// SOLID: SRP, DIP — Solo inicializa servicios, recibe dependencias por constructor
 final class AppInitializer {
   final FirebaseRemoteConfigService remoteConfig;
   final HiveService hiveService;

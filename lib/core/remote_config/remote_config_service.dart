@@ -1,3 +1,4 @@
+// SOLID: OCP, ISP — Interface específica para remote config, extensible sin modificación
 abstract class RemoteConfigService {
   /// Initialize the remote config service
   Future<void> initialize();

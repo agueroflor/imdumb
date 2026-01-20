@@ -1,6 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import 'hive_movie_model.dart';
 
+// SOLID: SRP, ISP — Solo gestiona favoritos con Hive, no mezcla otros storages
 class HiveService {
   static const String _movieBoxName = 'favorite_movies';
   Box<HiveMovieModel>? _movieBox;
