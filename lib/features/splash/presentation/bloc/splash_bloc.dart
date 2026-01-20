@@ -17,7 +17,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
     Emitter<SplashState> emit,
   ) async {
     try {
-      await appInitializer.initialize(event.environment);
+      await appInitializer.initialize();
       await Future.delayed(const Duration(milliseconds: 500));
       emit(const SplashLoaded());
     } catch (e) {
