@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../home/presentation/pages/home_page.dart';
+import '../../../movies/presentation/pages/home_page.dart';
 import '../bloc/splash_bloc.dart';
 import '../bloc/splash_event.dart';
 import '../bloc/splash_state.dart';
@@ -27,10 +27,11 @@ class _SplashPageState extends State<SplashPage> {
     return BlocListener<SplashBloc, SplashState>(
       listener: (context, state) {
         if (state is SplashLoaded) {
-          // Navigate to home when initialization is complete
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const HomePage()),
+            MaterialPageRoute(
+              builder: (context) => const HomePage(),
+            ),
           );
         } else if (state is SplashError) {
           // Show error dialog if initialization fails
