@@ -91,7 +91,7 @@ Cada feature (`movies`, `splash`) es autocontenido con sus propias capas. Los BL
 
 1. Clonar repositorio:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/agueroflor/imdumb/>
 cd imdumb
 ```
 
@@ -204,11 +204,12 @@ El proyecto aplica principios SOLID:
 Ejemplos concretos en: `lib/core/analytics/`, `lib/core/di/service_locator.dart`, `lib/features/movies/presentation/blocs/`, `lib/features/movies/data/repositories/`.
 
 ## Screenshots
-
-//TO-DO: Agregar capturas de pantalla
-
 - Home page
+<img width="379" height="768" alt="Captura de pantalla 2026-01-20 a la(s) 11 25 56 p  m" src="https://github.com/user-attachments/assets/5493db8e-5e4a-4985-9176-fd79211aba47" />
 - Detalle de película
-- Búsqueda
+<img width="384" height="774" alt="Captura de pantalla 2026-01-20 a la(s) 11 26 09 p  m" src="https://github.com/user-attachments/assets/40e7124e-6722-4976-8e8e-0d7d029852ca" />
 - Favoritos
+  <img width="375" height="767" alt="Captura de pantalla 2026-01-20 a la(s) 11 30 41 p  m" src="https://github.com/user-attachments/assets/4a86381e-da25-49b3-93e7-ca2f4916c419" />
 - Dialog de recomendación
+- <img width="385" height="789" alt="Captura de pantalla 2026-01-20 a la(s) 11 31 03 p  m" src="https://github.com/user-attachments/assets/5a5f2833-3068-45a6-89f5-17a4a6ff2eef" />
+
