@@ -43,9 +43,9 @@ Future<void> initializeDependencies() async {
   );
 
   // SOLID: DIP — Registro de interfaz → implementación permite cambiar providers sin modificar consumidores
-  serviceLocator.registerLazySingleton<AnalyticsService>(
-    () => FirebaseAnalyticsService(),
-  );
+  final analyticsService = FirebaseAnalyticsService();
+  serviceLocator.registerLazySingleton<AnalyticsService>(() => analyticsService);
+  serviceLocator.registerLazySingleton<FirebaseAnalyticsService>(() => analyticsService);
 
   // App Initializer
   serviceLocator.registerLazySingleton(

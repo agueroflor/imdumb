@@ -55,7 +55,7 @@ class _RecommendDialogState extends State<RecommendDialog> {
           'movie_id': widget.movieId,
           'movie_title': widget.movieTitle,
           'comment_length': comment.length,
-          'has_comment': comment.isNotEmpty,
+          'has_comment': comment.isNotEmpty ? 1 : 0,
         },
       );
 

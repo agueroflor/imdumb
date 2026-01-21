@@ -18,8 +18,10 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    // Trigger app initialization
-    context.read<SplashBloc>().add(InitializeApp(widget.environment));
+    // Trigger app initialization after build
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<SplashBloc>().add(InitializeApp(widget.environment));
+    });
   }
 
   @override

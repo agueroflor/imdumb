@@ -8,7 +8,9 @@ class HiveService {
 
   Future<void> init() async {
     await Hive.initFlutter();
-    Hive.registerAdapter(HiveMovieModelAdapter());
+    if (!Hive.isAdapterRegistered(0)) {
+      Hive.registerAdapter(HiveMovieModelAdapter());
+    }
     _movieBox = await Hive.openBox<HiveMovieModel>(_movieBoxName);
   }
 
